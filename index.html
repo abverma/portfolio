@@ -27,7 +27,16 @@
 	</style>
 </head>
 <body>
-	<div class="container-fluid px-0 m-0 py-3 d-flex flex-column justify-content-center">
+	<div class="container-fluid px-0 m-0 pb-3 d-flex flex-column justify-content-center">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white mt-0 mb-3 mybar">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="#">Home </a>
+					<a class="nav-item nav-link" href="#career">Career</a>
+					<a class="nav-item nav-link" href="#contact">Contact </a>
+			    </div>
+			</div>
+		</nav>
 		<div id="about" class="card m-auto w-auto p-1 border-white">
 			<img src="./images/avatar.jpg" 
 				width="200px" 
@@ -39,12 +48,13 @@
 			</div>
 		</div>
 		<div class="bg-secondary p-5 clip">
+			<h2 class="mb-3 text-center text-light">Personal Projects</h2>
 			<div class="d-flex flex-column justify-conent-around">
 				<div class="row px-5 my-2">
 					<img src="./images/fitlog-login-md.png" class="img-fluid col col-12 col-md-8">
 					<div class="px-3 my-2 col col-12 col-md-4">
 						<h2><a href="https://logmymoves.herokuapp.com" class="fitlog text-decoration-none">Fitlog</a></h2>
-						<p class="text-white">Whether you are a fitness enthusiast or a beginner, logging your workouts in the gym or on the track helps you gauge your progress accurately. Use Fitlog to log your strength training set by set or your cardio sessions by time/distance. 
+						<p class="text-light">Whether you are a fitness enthusiast or a beginner, logging your workouts in the gym or on the track helps you gauge your progress accurately. Use Fitlog to log your strength training set by set or your cardio sessions by time/distance. 
 
 						</p>
 						<h4 class="text-light">Technology</h4>
@@ -68,6 +78,38 @@
 				<img class="mx-2" src="./images/git.png" height="70px"/>
 				<img class="mx-2" src="./images/vim.png" height="70px"/>
 				<img class="mx-2" src="./images/sublime.png" height="70px"/>
+			</div>
+		</div>
+
+		<div class="bg-secondary py-5 clip text-light" id="career">
+			<h2 class="text-center mb-3">Career</h2>
+			<div id="about" class="card px-5 bg-secondary rounded-0">
+				<div class="card-body">
+					<h3 class="card-title mb-3">Effiser Software Pvt Ltd </h3>
+					<h6 class="card-subtitle">Tech Lead - Full Stack JavaScript Developer</h6><small>2015 - Till Date</small>
+				</div>
+			</div>
+			<div id="about" class="card px-5 bg-secondary rounded-0">
+				<div class="card-body">
+					<h3 class="card-title mb-3">Oracle</h3>
+					<h6 class="card-subtitle">Applications Engineer - ADF Developer</h6><small>2012-2015</small>
+				</div>
+			</div>
+			<div id="about" class="card px-5 bg-secondary rounded-0">
+				<div class="card-body">
+					<h3 class="card-title mb-3">IBM</h3>
+					<h6 class="card-subtitle">System Engineer - Java WebService Developer</h6><small>2010-2012</small>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact" class="card m-auto w-auto py-5 border-white">
+			<div class="card-body text-center">
+				<h2 class="card-title mb-4">Abhishek Verma</h2>
+				<h6 class="card-subtitle mb-4">abverma@protonmail.com</h6>
+				<h6 class="card-subtitle mb-4">+91-9591842302</h6>
+				<h6 class="card-subtitle mb-4"><a href="https://github.com/abverma">Github</a></h6>
+				<h6 class="card-subtitle mb-4"><a href="https://www.linkedin.com/in/abhishek-verma-0b29b225/">LinkedIn</a></h6>
 			</div>
 		</div>
 	</div>
