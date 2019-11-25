@@ -24,19 +24,38 @@
 		p {
 			font-size: 16px;
 		}
+
+		.img-fluid {
+			height: auto;
+			max-width: 100%;
+		}
+
+		.icon-row {
+			height: 40px;
+		}
 	</style>
 </head>
 <body>
 	<div class="container-fluid px-0 m-0 pb-3 d-flex flex-column justify-content-center">
-		<nav class="navbar navbar-expand-lg navbar-light bg-white mt-0 mb-3 mybar">
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<div class="navbar-nav">
-					<a class="nav-item nav-link active" href="#">Home </a>
-					<a class="nav-item nav-link" href="#career">Career</a>
-					<a class="nav-item nav-link" href="#contact">Contact </a>
-			    </div>
+		<nav class="navbar navbar-expand-md navbar-light">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExample09">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#career">Career</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
 			</div>
-		</nav>
+	    </nav>
 		<div id="about" class="card m-auto w-auto p-1 border-white">
 			<img src="./images/avatar.jpg" 
 				width="200px" 
@@ -51,7 +70,9 @@
 			<h2 class="mb-3 text-center text-light">Personal Projects</h2>
 			<div class="d-flex flex-column justify-conent-around">
 				<div class="row px-5 my-2">
-					<img src="./images/fitlog-login-md.png" class="img-fluid col col-12 col-md-8">
+					<picture class="col col-12 col-md-8">
+						<img src="./images/fitlog-login-md.png" class="img-fluid">
+					</picture>
 					<div class="px-3 my-2 col col-12 col-md-4">
 						<h2><a href="https://logmymoves.herokuapp.com" class="fitlog text-decoration-none">Fitlog</a></h2>
 						<p class="text-light">Whether you are a fitness enthusiast or a beginner, logging your workouts in the gym or on the track helps you gauge your progress accurately. Use Fitlog to log your strength training set by set or your cardio sessions by time/distance. 
@@ -62,11 +83,14 @@
 					</div>
 				</div>
 				<div class="row px-4 my-4 mx-auto">
-					<img class="mx-2" src="./images/vuejs1.png" height="40px"/>
-					<img class="mx-2" src="./images/node.png" height="40px"/>
-					<img class="mx-2" src="./images/mongo.png" height="40px"/>
-					<img class="mx-2" src="./images/bootstrap-solid.svg" height="40px"/>
-					<img class="mx-2" src="./images/heroku.svg" height="40px"/>
+					<div class="col col-12">
+						<img class="mx-2 icon-row" src="./images/vuejs1.png"/>
+						<img class="mx-2 icon-row" src="./images/node.png"/>
+						<img class="mx-2 icon-row" src="./images/mongo.png"/>
+						<img class="mx-2 icon-row" src="./images/bootstrap-solid.svg"/>
+						<img class="mx-2 icon-row" src="./images/heroku.svg"/>
+					</div>
+					
 				</div>
 			</div>
 
@@ -113,8 +137,8 @@
 			</div>
 		</div>
 	</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
