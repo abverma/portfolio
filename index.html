@@ -19,7 +19,7 @@
 			color: #ff8a65
 		}
 		.clip {
-			clip-path: polygon(0 0%, 100% 10%, 100% 90%, 0% 100%);
+			clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 		}
 		p {
 			font-size: 16px;
@@ -31,7 +31,7 @@
 		}
 
 		.icon-row {
-			height: 40px;
+			height: 60px;
 		}
 	</style>
 </head>
@@ -57,13 +57,15 @@
 			</div>
 	    </nav>
 		<div id="about" class="card m-auto w-auto p-1 border-white">
-			<img src="./images/avatar.jpg" 
-				width="200px" 
-				height="200px" 
-				class="m-auto bg-light rounded-circle shadow bg-white rounded"/>
+			<picture class="m-auto">
+				<img src="./assets/images/profile.jpeg" 
+					 height="250px"
+				class="bg-light rounded-circle shadow bg-white"/>
+			</picture>
 			<div class="card-body text-center">
 				<h2 class="card-title mb-3">Abhishek Verma</h2>
-				<h6 class="card-subtitle">Full Stack JavaScript Developer</h6>
+				<h6 class="card-subtitle mb-2">Full Stack JavaScript Developer</h6>
+				<a href="./assets/resume.pdf" download>Download Resume</a>
 			</div>
 		</div>
 		<div class="bg-secondary py-5 px-2 p-md-5 clip">
@@ -71,10 +73,10 @@
 			<div class="d-flex flex-column justify-conent-around">
 				<div class="row px-md-5 my-2">
 					<picture class="col col-12 col-md-8">
-						<img src="./images/fitlog-login-md.png" class="img-fluid">
+						<img src="./assets/images/fitlog-login-md.png" class="img-fluid">
 					</picture>
 					<div class="px-md-3 my-2 col col-12 col-md-4">
-						<h2 class="text-center text-md-left"><a href="https://logmymoves.herokuapp.com" class="fitlog text-decoration-none">Fitlog</a></h2>
+						<h2 class="text-center mt-2 mt-md-0 text-md-left"><a href="https://logmymoves.herokuapp.com" class="fitlog text-decoration-none">Fitlog</a></h2>
 						<p class="text-light text-center text-md-left">Whether you are a fitness enthusiast or a beginner, logging your workouts in the gym or on the track helps you gauge your progress accurately. Use Fitlog to log your strength training set by set or your cardio sessions by time/distance. 
 
 						</p>
@@ -82,13 +84,14 @@
 						<p class="text-light text-center text-md-left">Webapp built with Vuejs, Nodejs, MongoDb. Fitlog is responsive to all device sizes, styled with Bootstrap and hosted on Heroku. I use Fitlog everyday to log my own workouts fast and easily.</p>
 					</div>
 				</div>
-				<div class="row px-4 my-4 mx-auto">
+				<h5 class="text-center my-3">Powered by</h5>
+				<div class="row px-4 my-3 mx-auto">
 					<div class="col col-12">
-						<img class="mx-2 icon-row mb-3" src="./images/vuejs1.png"/>
-						<img class="mx-2 icon-row mb-3" src="./images/node.png"/>
-						<img class="mx-2 icon-row mb-3" src="./images/mongo.png"/>
-						<img class="mx-2 icon-row mb-3" src="./images/bootstrap-solid.svg"/>
-						<img class="mx-2 icon-row mb-3" src="./images/heroku.svg"/>
+						<img class="mx-2 p-1 mb-3" src="./assets/images/vuejs.png" title="Vuejs" height="50px" />
+						<img class="mx-2 icon-row mb-3" src="./assets/images/nodejs.png" title="Nodejs"/>
+						<img class="mx-2 icon-row mb-3" src="./assets/images/mongo.png" title="MongoDB"/>
+						<img class="mx-2 icon-row mb-3" src="./assets/images/bootstrap.png" title="Bootstrap"/>
+						<img class="mx-2 icon-row mb-3" src="./assets/images/heroku.png" title="Heroku"/>
 					</div>
 					
 				</div>
@@ -98,10 +101,12 @@
 		<div class="m-auto p-5" >
 			<h3 class="text-center mb-5">The arrows in my quiver</h3>
 			<div class="row my-2">
-				<img class="mx-2" src="./images/terminal.png" height="70px" width="100px"/>
-				<img class="mx-2" src="./images/git.png" height="70px"/>
-				<img class="mx-2" src="./images/vim.png" height="70px"/>
-				<img class="mx-2" src="./images/sublime.png" height="70px"/>
+				<div class="col">
+					<img class="icon-row mx-2" src="./assets/images/command.png"/>
+					<img class="icon-row mx-2" src="./assets/images/git.png" />
+					<img class="icon-row mx-2" src="./assets/images/vim.png" />
+					<img class="icon-row mx-2" src="./assets/images/sublime.png" />
+				</div>
 			</div>
 		</div>
 
