@@ -17,7 +17,7 @@
 		}
 
 		body {
-			background-image: url('./assets/images/brush.jpeg');
+			background-image: url('./assets/images/white.jpeg');
 			background-attachment: fixed;
 			background-position: bottom;
 			background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 		}
 
 		.flip {
-			background-image: url('./assets/images/man.jpeg');
+			background-image: url('./assets/images/texture.jpg');
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 		}
 
 		.career {
-			background-image: url('./assets/images/career.jpeg');
+			background-image: url('./assets/images/lamp.jpeg');
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -58,12 +58,26 @@
 		.icon-row {
 			height: 60px;
 		}
+
+		@media (min-width: 576px) {
+			body {
+				background-image: url('./assets/images/brush.jpeg');
+			}
+
+			.flip {
+				background-image: url('./assets/images/man.jpeg');
+			}
+
+			.career {
+				background-image: url('./assets/images/career.jpeg');
+			}
+		}
 	</style>
 </head>
 <body>
 	<div class="container-fluid px-0 m-0 pb-3 d-flex flex-column justify-content-center">
 		<nav class="navbar navbar-expand-md navbar-light">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -94,7 +108,7 @@
 			</div>
 		</div>
 		<div class="flip py-5 px-2 p-md-5 clip">
-			<h2 class="mb-3 text-md-center font-weight-bold">Personal Projects</h2>
+			<h2 class="mb-3 text-center font-weight-bold">Personal Projects</h2>
 			<div class="d-flex flex-column justify-conent-around">
 				<div class="row px-md-5 my-2">
 					<picture class="col col-12 col-md-8">
