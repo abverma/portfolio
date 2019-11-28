@@ -15,6 +15,31 @@
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 300 !important;
 		}
+
+		body {
+			background-image: url('./assets/images/brush.jpeg');
+			background-attachment: fixed;
+			background-position: bottom;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.flip {
+			background-image: url('./assets/images/man.jpeg');
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.career {
+			background-image: url('./assets/images/career.jpeg');
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
 		.fitlog {
 			color: #ff8a65
 		}
@@ -56,10 +81,10 @@
 			</ul>
 			</div>
 	    </nav>
-		<div id="about" class="card m-auto w-auto p-1 border-white">
+		<div id="about" class="card m-auto w-auto p-1 border-0 bg-transparent">
 			<picture class="m-auto">
 				<img src="./assets/images/profile.jpeg" 
-					 height="250px"
+					 height="200px"
 				class="bg-light rounded-circle shadow bg-white"/>
 			</picture>
 			<div class="card-body text-center">
@@ -68,23 +93,23 @@
 				<a href="./assets/resume.pdf" download>Download Resume</a>
 			</div>
 		</div>
-		<div class="bg-secondary py-5 px-2 p-md-5 clip">
-			<h2 class="mb-3 text-center text-light">Personal Projects</h2>
+		<div class="flip py-5 px-2 p-md-5 clip">
+			<h2 class="mb-3 text-md-center font-weight-bold">Personal Projects</h2>
 			<div class="d-flex flex-column justify-conent-around">
 				<div class="row px-md-5 my-2">
 					<picture class="col col-12 col-md-8">
 						<img src="./assets/images/fitlog-login-md.png" class="img-fluid">
 					</picture>
 					<div class="px-md-3 my-2 col col-12 col-md-4">
-						<h2 class="text-center mt-2 mt-md-0 text-md-left"><a href="https://logmymoves.herokuapp.com" class="fitlog text-decoration-none">Fitlog</a></h2>
-						<p class="text-light text-center text-md-left">Whether you are a fitness enthusiast or a beginner, logging your workouts in the gym or on the track helps you gauge your progress accurately. Use Fitlog to log your strength training set by set or your cardio sessions by time/distance. 
+						<h2 class="text-white text-center mt-2 mt-md-0 text-md-left"><a href="https://logmymoves.herokuapp.com" class="fitlog text-decoration-none">Fitlog</a></h2>
+						<p class="text-white text-center text-md-left">Whether you are a fitness enthusiast or a beginner, logging your workouts in the gym or on the track helps you gauge your progress accurately. Use Fitlog to log your strength training set by set or your cardio sessions by time/distance. 
 
 						</p>
-						<h4 class="text-light text-center text-md-left">Technology</h4>
-						<p class="text-light text-center text-md-left">Webapp built with Vuejs, Nodejs, MongoDb. Fitlog is responsive to all device sizes, styled with Bootstrap and hosted on Heroku. I use Fitlog everyday to log my own workouts fast and easily.</p>
+						<h4 class="text-white text-center text-md-left">Technology</h4>
+						<p class="text-white text-center text-md-left">Webapp built with Vuejs, Nodejs, MongoDb. Fitlog is responsive to all device sizes, styled with Bootstrap and hosted on Heroku. I use Fitlog everyday to log my own workouts fast and easily.</p>
 					</div>
 				</div>
-				<h5 class="text-center my-3">Powered by</h5>
+				<h5 class="text-center text-white my-3">Powered by</h5>
 				<div class="row px-4 my-3 mx-auto">
 					<div class="col col-12">
 						<img class="mx-2 p-1 mb-3" src="./assets/images/vuejs.png" title="Vuejs" height="50px" />
@@ -110,21 +135,21 @@
 			</div>
 		</div>
 
-		<div class="bg-secondary py-5 clip text-light" id="career">
+		<div class="career py-5 clip" id="career">
 			<h2 class="text-center mb-3">Career</h2>
-			<div id="about" class="card px-md-5 bg-secondary rounded-0">
+			<div id="about" class="card border-0 bg-transparent px-md-5 bg-secondary rounded-0">
 				<div class="card-body text-center">
 					<h3 class="card-title mb-3">Effiser Software </h3>
 					<h6 class="card-subtitle">Tech Lead - Full Stack JavaScript Developer</h6><small>2015 - Till Date</small>
 				</div>
 			</div>
-			<div id="about" class="card px-md-5 bg-secondary rounded-0">
+			<div id="about" class="card border-0 bg-transparent px-md-5 bg-secondary rounded-0">
 				<div class="card-body text-center">
 					<h3 class="card-title mb-3">Oracle</h3>
 					<h6 class="card-subtitle">Applications Engineer - ADF Developer</h6><small>2012-2015</small>
 				</div>
 			</div>
-			<div id="about" class="card px-md-5 bg-secondary rounded-0">
+			<div id="about" class="card border-0 bg-transparent px-md-5 bg-secondary rounded-0">
 				<div class="card-body text-center">
 					<h3 class="card-title mb-3">IBM</h3>
 					<h6 class="card-subtitle">System Engineer - Java WebService Developer</h6><small>2010-2012</small>
@@ -132,7 +157,7 @@
 			</div>
 		</div>
 
-		<div id="contact" class="card m-auto w-auto py-5 border-white">
+		<div id="contact" class="card m-auto w-auto py-5 border-0 bg-transparent">
 			<div class="card-body text-center">
 				<h2 class="card-title mb-4">Abhishek Verma</h2>
 				<h6 class="card-subtitle mb-4">abverma@protonmail.com</h6>
